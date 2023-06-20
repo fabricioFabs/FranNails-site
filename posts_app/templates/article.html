@@ -1,4 +1,5 @@
-    <div class="detalhes-post">
+ <hr class="hr1">
+   <div class="detalhes-post">
         <div class="detalhes-posts">
             <div class="post-image">
                 <img src="{{post.image.url}}" width="300" alt="" /></a>
@@ -7,13 +8,19 @@
                 <div class="post-detalhes">
                     <div class="detalhes">
                         <div class="data">
-                            <time class="published" datetime="post.created_at" >{{post.created_at }} </time>
-                            
+                            <time class="published" datetime="post.created_at" >{{post.created_at }} </time>   
                         </div>
                         <a href="{% url 'post-detail' post.id %}"> <h1>{{post.title}}</h1></a> 
-                        <time class="published" datetime="post.description" >{{post.description}} </time>
+                        <div class="description">
+                            <time class="published" datetime="post.description" >{{post.description}} </time>
+                            <div class="post-button">
+                                <div class="button">  <a href="{% url 'post-detail' post.id %}"> leia mais</a></div>
+                            </div>
+                        </div>
                     </div>
                 </div> 
             </div> 
         </div>
     </div>
+    
+

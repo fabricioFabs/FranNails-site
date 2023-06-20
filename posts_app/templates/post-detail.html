@@ -9,22 +9,18 @@
                 <h1>{{post.title}}</h1>
             </div>
         </div>
-    </div>
+        <div class="post-img">
+            <img src="{{post.image.url}}" width="400" alt="{{post.title}}"> <br>
+        </div>
 
-    <div class="meta">
-        <img src="{{post.image.url}}" width="400" alt="{{post.title}}"> <br>
-    </div>
-
-    <div class="postlist">
-        <div class="title">
-            <div class="description">
-                <p><br><br> <h3>{{post.description}} </h3></p>
-            </div>
+        <div class="postlist">
+            <div class="title">  </div>
+                <div class="description">
+                    <p><br><br> <h3>{{post.description}} </h3></p>
+                </div>
+          
         </div>
     </div>
-</div>
-<div class="data">
-    <p><h4>{{post.created_at}} </h4></p>
 </div>
 
 {% block footer %}  {% include 'footer.html' %} {% endblock %}

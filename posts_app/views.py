@@ -17,7 +17,7 @@ def home(request):
       
 def post_list(request):
     template_name = 'paginas/post-list.html'
-    post = Post.objects.order_by('id')[:4]
+    post = Post.objects.order_by('id')[:7]
     context = {
         'post':post
         }
