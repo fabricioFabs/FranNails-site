@@ -112,4 +112,8 @@
         right: 20px;
         padding: 15px;
     }
+
+    footer{
+        gap: 5px;
+    }
 }

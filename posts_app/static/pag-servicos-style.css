@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@font-face {
+    font-family: 'flavor', sans-serif;
+    src: url(../fontes/flavor-sans.otf);
+}
+
+:root{ /*VARIAVEIS*/
+    --fonte-padrao: 'Sarala', sans-serif;
+    --fonte-destaque: 'Righteous', cursive;
+    --fonte-destaque2: 'flavor', sans-serif;
+    --fonte-padrao2: 'Audiowide', cursive;;
+
+    --cor1: #D98F95;
+    --cor2: #F95A67;
+    --cor3: #F7A3AA;
+    --cor4: #782B32;
+    --cor5: #C48287;
+    --cor6: #f3c5c9;
+    --cor7: #551f24;
+    --cor8: #f0cad4;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(60deg, #f0cad4 10%, #D98F95, #782B32);
+    background-attachment: fixed;
+}
+
+main {
+    border: 1px solid black;
+    padding: 48px;
+    
+}
+
+#container-principal{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 80px;
+}
+
+#foto-servicos{
+    height: 80vh;
+}
+
+#container-menor{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#titulo-servicos{
+    font-family: var(--fonte-destaque);
+    font-weight: 100;
+    color:#551f24;
+    font-size: 48px;
+}
