@@ -1,1 +1,1 @@
-web: gunicorn FranNails-site.wsgi --log-file -
+web: gunicorn core.wsgi --log-file -
