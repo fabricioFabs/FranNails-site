@@ -379,6 +379,23 @@ footer {
     padding-top: 2%;
 }
 
+.button-create{
+    padding:6px;
+	color:rgb(255, 255, 255);
+	background-color:rgb(27, 122, 3);
+	border: 1px solid #555; 
+	text-align: center;
+	user-select: none;
+	cursor: pointer;
+    width:15%;
+    margin-left: 80%;
+    margin-top: 2%;
+}
+
+.button-create:hover{
+	background: rgb(0, 240, 12);
+}
+
 .button{
 	padding:6px;
 	color:white;
